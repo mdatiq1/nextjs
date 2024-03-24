@@ -1,0 +1,163 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.maincomp {
+  background: url('https://thumbs.dreamstime.com/b/cricket-bat-red-ball-green-grass-horizontal-sport-theme-poster-greeting-cards-headers-website-app-275955781.jpg');
+  background-size: 100% 100%;
+  backdrop-filter: blur(10px);
+}
+
+.container {
+
+  height: 99.8vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+
+}
+
+label {
+  color: white;
+}
+
+form {
+  background: rgba(0, 0, 0, 0.7);
+  width: 50vw;
+  padding: 2vw 2vw;
+  border-radius: 8px;
+  color: white;
+  font-size: 1.2vw;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select {
+  width: calc(100% - 16px);
+  /* adjust for padding */
+  padding: 8px;
+  margin: 6px 0;
+  box-sizing: border-box;
+  border-radius: 4px;
+  border: none;
+  background: rgba(255, 255, 255, 0.1);
+  /* slightly transparent white */
+  color: white;
+}
+
+input[type="file"] {
+  width: calc(100% - 16px);
+  /* adjust for padding */
+  margin: 6px 0;
+  background: rgba(255, 255, 255, 0.1);
+  /* slightly transparent white */
+  color: white;
+}
+
+input[type="submit"] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+option {
+  background: rgba(55, 55, 55, 0.7);
+  font-size: 1.4vw;
+}
+
+.chakra-wrap__listitem {
+
+  display: flex;
+  justify-content: center;
+
+}
+
+
+/* @dashboard  */
+
+.dashboard {
+  height: 100vh;
+  color: white;
+  width: 100vw;
+}
+
+.sideDrawer {
+  background: rgba(55, 55, 55, 0.7);
+  height: 100vh;
+  width: 16vw;
+}
+
+
+.sidenav>ul {
+  position: relative;
+  top: 10vh;
+  padding: 5px;
+  margin-left: 5%;
+  font-size: 1.4vw;
+
+}
+
+.sidenav>ul>a {
+  text-align: left;
+  padding-left: 11%;
+  margin: 5px 3px;
+}
+.sidenav>ul>a>li{
+  background: rgba(255, 255, 255, 0.4);
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  border-radius: 8px;
+  padding: 8px;
+} 
+
+.logo {
+  position: relative;
+  top: 5vh;
+  font-size: 2vw;
+  left: 30%;
+}
+
+.profile {
+  position: fixed;
+  bottom: 5vh;
+  font-size: 2vw;
+  margin-left: 3vw;
+}
+table{
+ 
+  height:70vh;
+  overflow:scroll;
+}
+.chakra-table__container{
+  max-height: 96vh;
+  overflow: scroll;
+}
